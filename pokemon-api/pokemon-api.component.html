@@ -1,0 +1,44 @@
+
+<div class="whole_bg">
+
+
+<div class="title shadow">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+</div>
+
+<div class="search_box">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search...">
+    <!-- <button (click)="search($event)"><i class="fa fa-search"></i> Search</button> -->
+</div>
+
+<div class="height">
+    <div class="container">
+        <ul class="poke_grid">
+            <li *ngFor="let pokedata of pokemons; let i=index;">
+                <div class="card shadow" *ngIf="searchTerm ==='' || pokedata.name.toLowerCase().includes(searchTerm)">
+                    <div class="card_bg shadow">
+                        <h3>{{pokedata.name}}</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="img_box shadow">
+                            <img [src]="pokedata.sprites.front_shiny" alt="">
+                        </div>
+
+                        <h4><strong>Type:</strong> {{pokedata.types[0].type.name}}</h4>
+                        <h4><strong>Move:</strong> {{pokedata.moves[0].move.name}}</h4>
+                        <h4><strong>Height:</strong> {{pokedata.height}}</h4>
+                        <h4><strong>Health:</strong> {{pokedata.stats[0].base_stat}}</h4>
+                        <h4><strong>Attack Power:</strong> {{pokedata.stats[1].base_stat}}</h4>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+
+

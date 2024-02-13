@@ -1,0 +1,118 @@
+.whole_bg{
+    background-image: url('https://rare-gallery.com/uploads/posts/537212-pokemon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+.title{
+    text-align: center;
+    padding: 15px;
+    background: #5496d9;
+    margin-bottom: 14px;
+
+    img{
+        width: 200px;
+    }
+}
+
+.search_box {
+    text-align: center;
+    /* background: red; */
+    padding: 11px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    input {
+        height: 40px;
+        border: none;
+        border-radius: 36px;
+        width: 588px;
+        box-shadow: inset 1px 1px 3px #00000038;
+        padding: 4px 13px;
+        line-height: 2.1;
+    }
+
+    button {
+        background: #002353;
+        border-radius: 31px;
+        border: none;
+        height: 40px;
+        width: 110px;
+        color: #fff;
+        font-size: 1.25rem;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7215686275);
+        margin-left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+}
+
+.height{
+    min-height: 74vh;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.poke_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 38px;
+    list-style-type: none;  
+
+    .card{
+        .card_bg {
+                height: 222px;
+                background: #ffe681;
+                background-image: url('https://wallpapers.com/images/hd/yellow-gradient-background-svnzbb3ng3zy96kj.jpg');
+                width: 100%;
+                border-radius: 0 0 50% 0%;
+                padding: 20px;
+                border: 4px solid #fff;
+                
+                h3 {
+                    text-transform: capitalize;
+                    background: white;
+                    border-radius: 37px;
+                    padding: 7px 20px;
+                    display: inline-block;
+                }
+            }
+       
+
+        .card-body{
+            padding-top: 58px;
+            padding-bottom: 35px;       
+
+            .img_box{
+                background: #2f689f;
+                background-image: url('https://media.istockphoto.com/id/1165723546/vector/blue-radial-gradient-texture-background-abstract-with-shadow-blue-wallpaper-pattern.jpg?s=612x612&w=0&k=20&c=RXbVP3YpsB7IjaeZQfAIAG4gt85vBHU9DQm-e6yF9hg=');
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 184px;
+                height: 184px;
+                border-radius: 50%;
+                position: absolute;
+                top: 94px;
+                right: 5px;
+                border: 4px solid #fff;
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                    padding: 29px;
+                }
+            }
+            
+        }
+    }
+
+    
+}
